@@ -1,17 +1,45 @@
-import os
+from abc import ABC, abstractmethod
 
-class NotificadorFactory:
-    @staticmethod
-    def crear():
-        if (os.getenv("ENV_TYPE") == "REAL"):
-            return NotificadorSendGrid()
-        return NotificadorConsola()
 
-class NotificadorSendGrid:
-    def enviar_confirmacion(self, reserva):
-        # integración real con SendGrid
+class NotificadorInterface(ABC):
+    """
+    Interfaz abstracta para los canales de notificación.
+    """
+    @abstractmethod
+    def enviar_confirmacion(self, destinatario: str, mensaje: str) -> bool:
         pass
 
-class NotificadorConsola:
-    def enviar_confirmacion(self, reserva):
-        print(f"[MOCK] Confirmación enviada para reserva {reserva.id}")
+
+class EmailNotificador(NotificadorInterface):
+    """
+    Implementación concreta para notificaciones vía Email.
+    """
+    def enviar_confirmacion(self, destinatario: str, mensaje: str) -> bool:
+        # Simulación de envío de correo empresarial
+        print(f"[EMAIL ENVIADO a {destinatario}]: {mensaje}")
+        return True
+
+
+class SMSNotificador(NotificadorInterface):
+    """
+    Implementación concreta para notificaciones vía SMS.
+    """
+    def enviar_confirmacion(self, destinatario: str, mensaje: str) -> bool:
+        # Simulación de envío de SMS
+        print(f"[SMS ENVIADO a {destinatario}]: {mensaje}")
+        return True
+
+
+class NotificadorFactory:
+    """
+    Patrón Factory para instanciar la estrategia de notificación requerida.
+    """
+    @staticmethod
+    def get_notificador(tipo: str = "EMAIL") -> NotificadorInterface:
+        tipo_clean = tipo.upper()
+        if tipo_clean == "EMAIL":
+            return EmailNotificador()
+        elif tipo_clean == "SMS":
+            return SMSNotificador()
+        else:
+            raise ValueError(f"Tipo de notificación '{tipo}' no soportado.")
