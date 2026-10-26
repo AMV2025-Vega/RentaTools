@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Entornos virtuales
+venv/
+.venv/
+
+# Base de datos local y archivos generados
+*.sqlite3
+staticfiles/
+resumen_proyecto.txt
+codigo_actual.txt
+
+# Secretos
+.env
+*.env
+
+# Editor / sistema operativo
+.vscode/
+.idea/
+Thumbs.db

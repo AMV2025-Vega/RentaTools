@@ -121,3 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Integración Microservicio de Cálculo de Costo (Taller 02)
+COSTO_SERVICE_URL = os.getenv(
+    "COSTO_SERVICE_URL", "http://127.0.0.1:5000/api/v2/reservas/costo/"
+)
