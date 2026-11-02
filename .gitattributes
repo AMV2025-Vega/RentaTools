@@ -1,0 +1,5 @@
+# Evita que Git en Windows convierta scripts de shell a CRLF (rompe los contenedores Alpine).
+* text=auto
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.conf text eol=lf
