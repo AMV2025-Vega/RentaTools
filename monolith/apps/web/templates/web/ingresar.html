@@ -1,0 +1,17 @@
+{% extends "web/base.html" %}{% load i18n static %}
+{% block title %}{% trans "Ingresar" %}{% endblock %}
+{% block content %}
+<div class="authbox">
+  <h1>{% trans "Ingresar" %}</h1>
+  <form class="panel" id="form-auth" data-modo="login" data-siguiente="{{ siguiente }}" novalidate>
+    <div class="field"><label for="username">{% trans "Usuario" %}</label>
+      <input id="username" name="username" autocomplete="username" required autofocus></div>
+    <div class="field"><label for="password">{% trans "Contraseña" %}</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required></div>
+    <p id="msg" class="msg" role="alert" hidden></p>
+    <button class="btn btn--block" type="submit" id="btn-auth">{% trans "Ingresar" %}</button>
+  </form>
+  <p class="muted">{% trans "¿No tienes cuenta?" %} <a href="/registro/">{% trans "Crear cuenta" %}</a></p>
+</div>
+{% endblock %}
+{% block scripts %}<script src="{% static 'web/js/auth.js' %}"></script>{% endblock %}

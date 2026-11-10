@@ -1,0 +1,43 @@
+{% extends "web/base.html" %}{% load i18n static %}
+{% block title %}{% trans "Detalle de herramienta" %}{% endblock %}
+{% block content %}
+<p><a href="/">← {% trans "Volver al catálogo" %}</a></p>
+<div id="detalle" data-id="{{ herramienta_id }}" data-auth="{% if user.is_authenticated %}1{% else %}0{% endif %}">
+  <p class="muted" id="detalle-estado" role="status">{% trans "Cargando…" %}</p>
+  <div class="detail" id="detalle-cuerpo" hidden>
+    <div class="detail__media"><img id="foto" alt="" referrerpolicy="no-referrer" hidden></div>
+    <div class="detail__info">
+      <span class="badge" id="categoria"></span>
+      <h1 id="nombre"></h1>
+      <p id="descripcion" class="lead"></p>
+      <p class="price"><strong id="precio"></strong> <span>/ {% trans "día" %}</span></p>
+      <section aria-labelledby="h-ocupadas">
+        <h2 id="h-ocupadas" class="h3">{% trans "Fechas ocupadas" %}</h2>
+        <ul id="ocupadas" class="chips"></ul>
+      </section>
+    </div>
+
+    <form class="panel" id="form-reserva" novalidate>
+      <h2 class="h3">{% trans "Reserva y cotización" %}</h2>
+      <div class="row">
+        <div class="field">
+          <label for="inicio">{% trans "Desde" %}</label>
+          <input id="inicio" name="inicio" type="date" required>
+        </div>
+        <div class="field">
+          <label for="fin">{% trans "Hasta" %}</label>
+          <input id="fin" name="fin" type="date" required>
+        </div>
+      </div>
+      <p class="hint">{% trans "El día de inicio y el de fin cuentan como días de alquiler." %}</p>
+
+      <div id="cotizacion" class="quote" aria-live="polite"></div>
+      <p id="msg" class="msg" role="alert" hidden></p>
+
+      <button class="btn btn--block" id="btn-reservar" type="submit">{% trans "Reservar" %}</button>
+      {% if not user.is_authenticated %}<p class="hint">{% trans "Necesitas iniciar sesión para reservar." %}</p>{% endif %}
+    </form>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}<script src="{% static 'web/js/detalle.js' %}"></script>{% endblock %}

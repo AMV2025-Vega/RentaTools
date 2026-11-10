@@ -1,0 +1,41 @@
+{% extends "web/base.html" %}{% load i18n static %}
+{% block title %}{% trans "Publicar herramienta" %}{% endblock %}
+{% block content %}
+<h1>{% trans "Publicar herramienta" %}</h1>
+<div class="two">
+  <form class="panel" id="form-publicar" novalidate>
+    <div class="field">
+      <label for="nombre">{% trans "Nombre" %}</label>
+      <input id="nombre" name="nombre" maxlength="150" required>
+      <p class="err" id="err-nombre" hidden></p>
+    </div>
+    <div class="field">
+      <label for="categoria">{% trans "Categoría" %}</label>
+      <select id="categoria" name="categoria" required></select>
+      <p class="err" id="err-categoria_id" hidden></p>
+    </div>
+    <div class="field">
+      <label for="precio">{% trans "Precio por día (COP)" %}</label>
+      <input id="precio" name="precio" type="number" min="1" step="100" inputmode="numeric" required>
+      <p class="err" id="err-precio_por_dia" hidden></p>
+    </div>
+    <div class="field">
+      <label for="descripcion">{% trans "Descripción" %}</label>
+      <textarea id="descripcion" name="descripcion" rows="3"></textarea>
+    </div>
+    <div class="field">
+      <label for="foto">{% trans "URL de la foto (opcional)" %}</label>
+      <input id="foto" name="foto" type="url" placeholder="https://…">
+      <p class="err" id="err-foto_url" hidden></p>
+    </div>
+    <p id="msg" class="msg" role="alert" hidden></p>
+    <button class="btn" type="submit" id="btn-publicar">{% trans "Publicar" %}</button>
+  </form>
+
+  <section aria-labelledby="h-mias">
+    <h2 id="h-mias" class="h3">{% trans "Mis herramientas" %}</h2>
+    <ul class="list" id="mias" aria-live="polite"></ul>
+  </section>
+</div>
+{% endblock %}
+{% block scripts %}<script src="{% static 'web/js/publicar.js' %}"></script>{% endblock %}

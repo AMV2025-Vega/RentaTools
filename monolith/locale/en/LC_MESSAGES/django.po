@@ -1,0 +1,385 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: RentaTools\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Acciones"
+msgstr "Actions"
+
+msgid "Activa"
+msgstr "Active"
+
+msgid "Activar"
+msgstr "Activate"
+
+msgid "Alquila la herramienta que necesitas, sin comprarla"
+msgstr "Rent the tool you need, without buying it"
+
+msgid "Alquiler"
+msgstr "Rental"
+
+msgid "Aún no has publicado herramientas."
+msgstr "You haven't listed any tools yet."
+
+msgid "Aún no tienes reservas."
+msgstr "You have no bookings yet."
+
+msgid "Buscar"
+msgstr "Search"
+
+msgid "Calculando cotización…"
+msgstr "Calculating quote…"
+
+msgid "Cancelada"
+msgstr "Cancelled"
+
+msgid "Cancelar"
+msgstr "Cancel"
+
+msgid "Cargando…"
+msgstr "Loading…"
+
+msgid "Categoría"
+msgstr "Category"
+
+msgid "Catálogo"
+msgstr "Catalog"
+
+msgid "Cobertura máxima"
+msgstr "Maximum coverage"
+
+msgid "Confirmada"
+msgstr "Confirmed"
+
+msgid "Contraseña"
+msgstr "Password"
+
+msgid "Correo electrónico"
+msgstr "Email"
+
+msgid "Creando cuenta…"
+msgstr "Creating account…"
+
+msgid "Crear cuenta"
+msgstr "Create account"
+
+msgid "Descargar reporte (CSV)"
+msgstr "Download report (CSV)"
+
+msgid "Descripción"
+msgstr "Description"
+
+msgid "Desde"
+msgstr "From"
+
+msgid "Detalle de herramienta"
+msgstr "Tool details"
+
+msgid "Días"
+msgstr "Days"
+
+msgid "El cliente es obligatorio."
+msgstr "The customer is required."
+
+msgid "El correo ya está registrado."
+msgstr "That email is already registered."
+
+msgid "El día de inicio y el de fin cuentan como días de alquiler."
+msgstr "Both the start and end days count as rental days."
+
+msgid "El estado indicado no es válido."
+msgstr "The given status is not valid."
+
+msgid "El nombre de la herramienta es obligatorio."
+msgstr "The tool name is required."
+
+msgid "El nombre de usuario ya está en uso."
+msgstr "That username is already taken."
+
+msgid "El precio por día debe ser mayor que cero."
+msgstr "The price per day must be greater than zero."
+
+msgid "El reporte está tardando; intenta de nuevo en un momento."
+msgstr "The report is taking longer than expected; please try again shortly."
+
+msgid "El servicio de reportes no está disponible en este momento."
+msgstr "The reports service is unavailable at the moment."
+
+msgid ""
+"El servicio de seguros no está disponible ahora; el total no incluye seguro."
+msgstr ""
+"The insurance service is unavailable right now; the total does not include "
+"insurance."
+
+msgid "El servicio no está disponible en este momento."
+msgstr "The service is unavailable at the moment."
+
+msgid "Elige las fechas de inicio y fin."
+msgstr "Choose the start and end dates."
+
+msgid "En mantenimiento"
+msgstr "Under maintenance"
+
+msgid ""
+"Encuentra equipos de otros usuarios, consulta su disponibilidad por fechas y"
+" reserva en minutos."
+msgstr ""
+"Find equipment from other users, check its availability by date and book in "
+"minutes."
+
+msgid "Equivale a"
+msgstr "Equivalent to"
+
+msgid "Ese reporte pertenece a otro usuario."
+msgstr "That report belongs to another user."
+
+msgid "Esta herramienta no tiene reservas próximas."
+msgstr "This tool has no upcoming bookings."
+
+msgid "Estado"
+msgstr "Status"
+
+msgid "Faltan datos para construir la reserva."
+msgstr "Some data needed to build the booking is missing."
+
+msgid "Fechas"
+msgstr "Dates"
+
+msgid "Fechas ocupadas"
+msgstr "Booked dates"
+
+msgid "Filtrar herramientas"
+msgstr "Filter tools"
+
+msgid "Finalizada"
+msgstr "Completed"
+
+msgid "Generando tu reporte…"
+msgstr "Generating your report…"
+
+msgid "Hasta"
+msgstr "To"
+
+msgid "Herramienta"
+msgstr "Tool"
+
+msgid "Herramienta publicada."
+msgstr "Tool listed."
+
+#, python-format
+msgid ""
+"Hola %(nombre)s, tu reserva #%(id)s de '%(herramienta)s' (%(inicio)s a "
+"%(fin)s) quedó pendiente de pago por %(total)s %(moneda)s."
+msgstr ""
+"Hi %(nombre)s, your booking #%(id)s for '%(herramienta)s' (%(inicio)s to "
+"%(fin)s) is pending payment: %(total)s %(moneda)s."
+
+#, python-format
+msgid "Hola %(nombre)s, tu reserva #%(id)s fue cancelada."
+msgstr "Hi %(nombre)s, your booking #%(id)s was cancelled."
+
+msgid "Idioma"
+msgstr "Language"
+
+msgid "Ingresando…"
+msgstr "Signing in…"
+
+msgid "Ingresar"
+msgstr "Sign in"
+
+msgid "Inicio"
+msgstr "Home"
+
+msgid "La categoría no existe."
+msgstr "The category does not exist."
+
+msgid "La fecha de fin no puede ser anterior a la de inicio."
+msgstr "The end date cannot be before the start date."
+
+msgid "La fecha de inicio no puede estar en el pasado."
+msgstr "The start date cannot be in the past."
+
+msgid "La herramienta es obligatoria."
+msgstr "The tool is required."
+
+msgid "La herramienta no está disponible para alquiler."
+msgstr "The tool is not available for rental."
+
+msgid "La herramienta no existe."
+msgstr "The tool does not exist."
+
+msgid "La herramienta ya está reservada en alguna de esas fechas."
+msgstr "The tool is already booked on some of those dates."
+
+msgid "La operación no es válida para el estado actual de la reserva."
+msgstr "The operation is not valid for the booking's current status."
+
+msgid "La reserva excede el máximo de días permitido."
+msgstr "The booking exceeds the maximum number of days allowed."
+
+msgid "La reserva no existe."
+msgstr "The booking does not exist."
+
+msgid "Las fechas de inicio y fin son obligatorias."
+msgstr "Start and end dates are required."
+
+msgid "Mis herramientas"
+msgstr "My tools"
+
+msgid "Mis reservas"
+msgstr "My bookings"
+
+msgid "Mínimo 8 caracteres, no solo números."
+msgstr "At least 8 characters, not only numbers."
+
+msgid "Navegación principal"
+msgstr "Main navigation"
+
+msgid "Necesitas iniciar sesión para reservar."
+msgstr "You need to sign in to book."
+
+msgid "No hay herramientas que coincidan con tu búsqueda."
+msgstr "No tools match your search."
+
+msgid "No puedes reservar tu propia herramienta."
+msgstr "You cannot book your own tool."
+
+msgid "No se pudo conectar con el servidor. Intenta de nuevo."
+msgstr "Could not reach the server. Please try again."
+
+msgid "No se pudo generar el reporte."
+msgstr "The report could not be generated."
+
+msgid "No se pudo obtener la tasa de cambio; no se muestra el valor en USD."
+msgstr "The exchange rate is unavailable; the USD value is not shown."
+
+msgid "No se puede cancelar una reserva que ya no está vigente."
+msgstr "A booking that is no longer active cannot be cancelled."
+
+msgid "Nombre"
+msgstr "Name"
+
+msgid "Ocurrió un error inesperado."
+msgstr "An unexpected error occurred."
+
+msgid "Pendiente de pago"
+msgstr "Payment pending"
+
+msgid "Poner en mantenimiento"
+msgstr "Set to maintenance"
+
+msgid "Precio por día (COP)"
+msgstr "Price per day (COP)"
+
+msgid ""
+"Proyecto de Arquitectura de Software 2026 · Alquiler de herramientas entre "
+"particulares"
+msgstr "Software Architecture 2026 project · Peer-to-peer tool rental"
+
+msgid "Publicando…"
+msgstr "Publishing…"
+
+msgid "Publicar"
+msgstr "Publish"
+
+msgid "Publicar herramienta"
+msgstr "List a tool"
+
+msgid "Reporte listo: se está descargando."
+msgstr "Report ready: downloading."
+
+msgid "Reserva cancelada"
+msgstr "Booking cancelled"
+
+msgid "Reserva cancelada."
+msgstr "Booking cancelled."
+
+msgid "Reserva registrada"
+msgstr "Booking registered"
+
+msgid "Reserva y cotización"
+msgstr "Booking and quote"
+
+msgid "Reservando…"
+msgstr "Booking…"
+
+msgid "Reservar"
+msgstr "Book"
+
+msgid "Salir"
+msgstr "Sign out"
+
+msgid "Saltar al contenido"
+msgstr "Skip to content"
+
+msgid "Seguro opcional"
+msgstr "Optional insurance"
+
+msgid "Sin foto"
+msgstr "No photo"
+
+msgid "Solo el propietario puede cambiar el estado de la herramienta."
+msgstr "Only the owner can change the tool's status."
+
+msgid "Solo quien hizo la reserva puede cancelarla."
+msgstr "Only the person who made the booking can cancel it."
+
+msgid "Taladro, guadaña…"
+msgstr "Drill, lawn mower…"
+
+#, python-brace-format
+msgid "Tasa: 1 USD = {cop} COP (actualizada {fecha})"
+msgstr "Rate: 1 USD = {cop} COP (updated {fecha})"
+
+msgid "Teléfono (opcional)"
+msgstr "Phone (optional)"
+
+msgid "Todas las categorías"
+msgstr "All categories"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "URL de la foto (opcional)"
+msgstr "Photo URL (optional)"
+
+msgid "Usuario"
+msgstr "Username"
+
+msgid "Usuario o contraseña incorrectos."
+msgstr "Incorrect username or password."
+
+msgid "Usuario y correo son obligatorios."
+msgstr "Username and email are required."
+
+msgid "Ver"
+msgstr "View"
+
+msgid "Volver al catálogo"
+msgstr "Back to catalog"
+
+msgid "día"
+msgstr "day"
+
+msgid "días"
+msgstr "days"
+
+#, python-brace-format
+msgid "{h} herramientas activas · {r} reservas registradas"
+msgstr "{h} active tools · {r} bookings made"
+
+msgid "¡Reserva creada! Te llevamos a tus reservas."
+msgstr "Booking created! Taking you to your bookings."
+
+msgid "¿Cancelar esta reserva?"
+msgstr "Cancel this booking?"
+
+msgid "¿No tienes cuenta?"
+msgstr "Don't have an account?"
+
+msgid "¿Ya tienes cuenta?"
+msgstr "Already have an account?"

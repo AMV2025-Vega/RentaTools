@@ -7,17 +7,12 @@ __pycache__/
 venv/
 .venv/
 
-# Base de datos local y archivos generados
+# Secretos y datos locales
+.env
 *.sqlite3
 staticfiles/
-resumen_proyecto.txt
-codigo_actual.txt
 
-# Secretos
-.env
-*.env
-
-# Editor / sistema operativo
+# Editor / SO
 .vscode/
 .idea/
 Thumbs.db

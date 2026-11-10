@@ -1,0 +1,21 @@
+{% extends "web/base.html" %}{% load i18n static %}
+{% block title %}{% trans "Mis reservas" %}{% endblock %}
+{% block content %}
+<div class="pagehead">
+  <h1>{% trans "Mis reservas" %}</h1>
+  <button class="btn btn--ghost" id="btn-reporte" type="button">{% trans "Descargar reporte (CSV)" %}</button>
+</div>
+<p id="msg" class="msg" role="status" aria-live="polite" hidden></p>
+<div class="tablewrap">
+  <table class="table" id="tabla" hidden>
+    <thead><tr>
+      <th scope="col">#</th><th scope="col">{% trans "Herramienta" %}</th><th scope="col">{% trans "Fechas" %}</th>
+      <th scope="col">{% trans "Días" %}</th><th scope="col">{% trans "Total" %}</th><th scope="col">{% trans "Estado" %}</th>
+      <th scope="col"><span class="sr">{% trans "Acciones" %}</span></th>
+    </tr></thead>
+    <tbody id="filas"></tbody>
+  </table>
+</div>
+<p id="vacio" class="muted" hidden></p>
+{% endblock %}
+{% block scripts %}<script src="{% static 'web/js/reservas.js' %}"></script>{% endblock %}
